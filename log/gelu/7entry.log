@@ -1,0 +1,100 @@
+2025-10-07 17:07:34,342 - INFO: Training Configuration:
+2025-10-07 17:07:34,342 - INFO: {
+  "function": "gelu",
+  "x_range": [
+    -4.0,
+    2.0
+  ],
+  "num_entries": 7,
+  "total_epochs": 40000,
+  "warmup_epochs": 1000,
+  "base_lr": 0.001,
+  "weight_decay": 0.0001,
+  "range_weight": 0.1,
+  "prox_weight": 0.1,
+  "device": "cpu"
+}
+2025-10-07 17:07:34,350 - INFO: Epoch [0/40000], Total Loss: 0.020194, Main Loss: 0.020194, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000101
+2025-10-07 17:07:35,520 - INFO: Epoch [500/40000], Total Loss: 0.005237, Main Loss: 0.005237, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000551
+2025-10-07 17:07:36,637 - INFO: Epoch [1000/40000], Total Loss: 0.004155, Main Loss: 0.004155, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.001000
+2025-10-07 17:07:37,782 - INFO: Epoch [1500/40000], Total Loss: 0.003533, Main Loss: 0.003533, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.001000
+2025-10-07 17:07:38,874 - INFO: Epoch [2000/40000], Total Loss: 0.003225, Main Loss: 0.003225, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000998
+2025-10-07 17:07:39,927 - INFO: Epoch [2500/40000], Total Loss: 0.003079, Main Loss: 0.003079, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000996
+2025-10-07 17:07:41,025 - INFO: Epoch [3000/40000], Total Loss: 0.002983, Main Loss: 0.002983, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000994
+2025-10-07 17:07:42,125 - INFO: Epoch [3500/40000], Total Loss: 0.002928, Main Loss: 0.002928, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000990
+2025-10-07 17:07:43,281 - INFO: Epoch [4000/40000], Total Loss: 0.002894, Main Loss: 0.002894, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000986
+2025-10-07 17:07:44,405 - INFO: Epoch [4500/40000], Total Loss: 0.002873, Main Loss: 0.002873, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000980
+2025-10-07 17:07:45,567 - INFO: Epoch [5000/40000], Total Loss: 0.002854, Main Loss: 0.002854, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000975
+2025-10-07 17:07:46,684 - INFO: Epoch [5500/40000], Total Loss: 0.002845, Main Loss: 0.002845, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000968
+2025-10-07 17:07:47,743 - INFO: Epoch [6000/40000], Total Loss: 0.002850, Main Loss: 0.002850, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000960
+2025-10-07 17:07:48,781 - INFO: Epoch [6500/40000], Total Loss: 0.002833, Main Loss: 0.002833, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000952
+2025-10-07 17:07:49,863 - INFO: Epoch [7000/40000], Total Loss: 0.002829, Main Loss: 0.002829, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000943
+2025-10-07 17:07:50,989 - INFO: Epoch [7500/40000], Total Loss: 0.002827, Main Loss: 0.002827, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000934
+2025-10-07 17:07:52,096 - INFO: Epoch [8000/40000], Total Loss: 0.002823, Main Loss: 0.002823, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000923
+2025-10-07 17:07:53,191 - INFO: Epoch [8500/40000], Total Loss: 0.002822, Main Loss: 0.002822, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000912
+2025-10-07 17:07:54,533 - INFO: Epoch [9000/40000], Total Loss: 0.002822, Main Loss: 0.002822, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000901
+2025-10-07 17:07:56,142 - INFO: Epoch [9500/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000888
+2025-10-07 17:07:57,344 - INFO: Epoch [10000/40000], Total Loss: 0.002820, Main Loss: 0.002820, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000875
+2025-10-07 17:07:58,434 - INFO: Epoch [10500/40000], Total Loss: 0.002821, Main Loss: 0.002821, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000862
+2025-10-07 17:07:59,518 - INFO: Epoch [11000/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000848
+2025-10-07 17:08:00,602 - INFO: Epoch [11500/40000], Total Loss: 0.002823, Main Loss: 0.002823, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000833
+2025-10-07 17:08:01,662 - INFO: Epoch [12000/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000818
+2025-10-07 17:08:02,736 - INFO: Epoch [12500/40000], Total Loss: 0.002820, Main Loss: 0.002820, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000802
+2025-10-07 17:08:03,822 - INFO: Epoch [13000/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000786
+2025-10-07 17:08:04,908 - INFO: Epoch [13500/40000], Total Loss: 0.002828, Main Loss: 0.002828, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000770
+2025-10-07 17:08:05,989 - INFO: Epoch [14000/40000], Total Loss: 0.002820, Main Loss: 0.002820, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000752
+2025-10-07 17:08:07,065 - INFO: Epoch [14500/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000735
+2025-10-07 17:08:08,158 - INFO: Epoch [15000/40000], Total Loss: 0.002822, Main Loss: 0.002822, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000717
+2025-10-07 17:08:09,229 - INFO: Epoch [15500/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000699
+2025-10-07 17:08:10,331 - INFO: Epoch [16000/40000], Total Loss: 0.002822, Main Loss: 0.002822, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000680
+2025-10-07 17:08:11,402 - INFO: Epoch [16500/40000], Total Loss: 0.002821, Main Loss: 0.002821, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000662
+2025-10-07 17:08:12,485 - INFO: Epoch [17000/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000643
+2025-10-07 17:08:13,553 - INFO: Epoch [17500/40000], Total Loss: 0.002824, Main Loss: 0.002824, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000623
+2025-10-07 17:08:14,635 - INFO: Epoch [18000/40000], Total Loss: 0.002835, Main Loss: 0.002835, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000604
+2025-10-07 17:08:15,714 - INFO: Epoch [18500/40000], Total Loss: 0.002826, Main Loss: 0.002826, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000584
+2025-10-07 17:08:16,851 - INFO: Epoch [19000/40000], Total Loss: 0.002824, Main Loss: 0.002824, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000565
+2025-10-07 17:08:17,936 - INFO: Epoch [19500/40000], Total Loss: 0.002825, Main Loss: 0.002825, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000545
+2025-10-07 17:08:19,046 - INFO: Epoch [20000/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000525
+2025-10-07 17:08:20,136 - INFO: Epoch [20500/40000], Total Loss: 0.002828, Main Loss: 0.002828, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000505
+2025-10-07 17:08:21,198 - INFO: Epoch [21000/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000485
+2025-10-07 17:08:22,275 - INFO: Epoch [21500/40000], Total Loss: 0.002821, Main Loss: 0.002821, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000465
+2025-10-07 17:08:23,353 - INFO: Epoch [22000/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000445
+2025-10-07 17:08:24,441 - INFO: Epoch [22500/40000], Total Loss: 0.002828, Main Loss: 0.002828, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000426
+2025-10-07 17:08:25,554 - INFO: Epoch [23000/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000406
+2025-10-07 17:08:26,653 - INFO: Epoch [23500/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000387
+2025-10-07 17:08:27,749 - INFO: Epoch [24000/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000367
+2025-10-07 17:08:28,839 - INFO: Epoch [24500/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000348
+2025-10-07 17:08:29,934 - INFO: Epoch [25000/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000329
+2025-10-07 17:08:31,021 - INFO: Epoch [25500/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000311
+2025-10-07 17:08:32,090 - INFO: Epoch [26000/40000], Total Loss: 0.002821, Main Loss: 0.002821, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000293
+2025-10-07 17:08:33,194 - INFO: Epoch [26500/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000275
+2025-10-07 17:08:34,367 - INFO: Epoch [27000/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000257
+2025-10-07 17:08:35,504 - INFO: Epoch [27500/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000240
+2025-10-07 17:08:36,589 - INFO: Epoch [28000/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000224
+2025-10-07 17:08:37,648 - INFO: Epoch [28500/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000208
+2025-10-07 17:08:38,726 - INFO: Epoch [29000/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000192
+2025-10-07 17:08:39,806 - INFO: Epoch [29500/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000177
+2025-10-07 17:08:40,897 - INFO: Epoch [30000/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000162
+2025-10-07 17:08:41,951 - INFO: Epoch [30500/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000148
+2025-10-07 17:08:43,031 - INFO: Epoch [31000/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000134
+2025-10-07 17:08:44,121 - INFO: Epoch [31500/40000], Total Loss: 0.002820, Main Loss: 0.002820, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000122
+2025-10-07 17:08:45,217 - INFO: Epoch [32000/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000109
+2025-10-07 17:08:46,288 - INFO: Epoch [32500/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000098
+2025-10-07 17:08:47,356 - INFO: Epoch [33000/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000087
+2025-10-07 17:08:48,414 - INFO: Epoch [33500/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000076
+2025-10-07 17:08:49,502 - INFO: Epoch [34000/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000067
+2025-10-07 17:08:50,583 - INFO: Epoch [34500/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000058
+2025-10-07 17:08:51,698 - INFO: Epoch [35000/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000050
+2025-10-07 17:08:52,806 - INFO: Epoch [35500/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000042
+2025-10-07 17:08:53,911 - INFO: Epoch [36000/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000035
+2025-10-07 17:08:55,004 - INFO: Epoch [36500/40000], Total Loss: 0.002818, Main Loss: 0.002818, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000030
+2025-10-07 17:08:56,081 - INFO: Epoch [37000/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000024
+2025-10-07 17:08:57,171 - INFO: Epoch [37500/40000], Total Loss: 0.002818, Main Loss: 0.002818, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000020
+2025-10-07 17:08:58,319 - INFO: Epoch [38000/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000016
+2025-10-07 17:08:59,485 - INFO: Epoch [38500/40000], Total Loss: 0.002819, Main Loss: 0.002819, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000014
+2025-10-07 17:09:00,606 - INFO: Epoch [39000/40000], Total Loss: 0.002818, Main Loss: 0.002818, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000012
+2025-10-07 17:09:01,747 - INFO: Epoch [39500/40000], Total Loss: 0.002818, Main Loss: 0.002818, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000010
+2025-10-07 17:09:02,894 - INFO: Epoch [39999/40000], Total Loss: 0.002818, Main Loss: 0.002818, Range Loss: 0.000000, Prox Loss: 0.000000, LR: 0.000010
+2025-10-07 17:09:02,901 - INFO: Best MAE: 0.002818447072058916
+2025-10-07 17:09:02,901 - INFO: Model saved to log/gelu/7entry.pt
+2025-10-07 17:09:02,901 - INFO: Training results saved to log/gelu/7entry_results.json

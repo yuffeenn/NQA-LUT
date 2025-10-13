@@ -1,0 +1,13 @@
+func_name: elu
+num_entries: 10
+x_range: [-6.0, 2.0]
+train: True
+train_epochs: 40000
+train_lr: 1.0e-3
+weight_decay: 1.0e-4
+range_weight: 0.1
+prox_weight: 0.1
+qat: True
+bits: 9
+qat_epochs: 5000
+qat_lr: 1.0e-3
