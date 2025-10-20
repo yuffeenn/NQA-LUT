@@ -1,0 +1,100 @@
+2025-10-17 11:44:24,542 - INFO: Training Configuration:
+2025-10-17 11:44:24,542 - INFO: {
+  "function": "gelu",
+  "x_range": [
+    -4.0,
+    4.0
+  ],
+  "num_entries": 16,
+  "total_epochs": 40000,
+  "warmup_epochs": 1000,
+  "base_lr": 0.001,
+  "weight_decay": 0.0001,
+  "range_weight": 0.1,
+  "prox_weight": 0.1,
+  "device": "cpu"
+}
+2025-10-17 11:44:24,554 - INFO: Epoch [0/40000], Total Loss: 1.187e-04, Main Loss: 1.187e-04, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 1.009e-04
+2025-10-17 11:44:25,690 - INFO: Epoch [500/40000], Total Loss: 8.075e-06, Main Loss: 8.075e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 5.509e-04
+2025-10-17 11:44:26,786 - INFO: Epoch [1000/40000], Total Loss: 7.597e-06, Main Loss: 7.597e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 1.000e-03
+2025-10-17 11:44:27,907 - INFO: Epoch [1500/40000], Total Loss: 7.213e-06, Main Loss: 7.213e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 9.996e-04
+2025-10-17 11:44:29,005 - INFO: Epoch [2000/40000], Total Loss: 6.915e-06, Main Loss: 6.915e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 9.984e-04
+2025-10-17 11:44:30,106 - INFO: Epoch [2500/40000], Total Loss: 6.677e-06, Main Loss: 6.677e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 9.964e-04
+2025-10-17 11:44:31,211 - INFO: Epoch [3000/40000], Total Loss: 6.481e-06, Main Loss: 6.481e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 9.936e-04
+2025-10-17 11:44:32,324 - INFO: Epoch [3500/40000], Total Loss: 6.408e-06, Main Loss: 6.408e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 9.900e-04
+2025-10-17 11:44:33,414 - INFO: Epoch [4000/40000], Total Loss: 6.246e-06, Main Loss: 6.246e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 9.856e-04
+2025-10-17 11:44:34,486 - INFO: Epoch [4500/40000], Total Loss: 1.392e-05, Main Loss: 1.392e-05, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 9.804e-04
+2025-10-17 11:44:35,591 - INFO: Epoch [5000/40000], Total Loss: 6.144e-06, Main Loss: 6.144e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 9.745e-04
+2025-10-17 11:44:36,699 - INFO: Epoch [5500/40000], Total Loss: 6.026e-06, Main Loss: 6.026e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 9.678e-04
+2025-10-17 11:44:37,791 - INFO: Epoch [6000/40000], Total Loss: 5.922e-06, Main Loss: 5.922e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 9.604e-04
+2025-10-17 11:44:38,895 - INFO: Epoch [6500/40000], Total Loss: 5.892e-06, Main Loss: 5.892e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 9.522e-04
+2025-10-17 11:44:39,987 - INFO: Epoch [7000/40000], Total Loss: 5.779e-06, Main Loss: 5.779e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 9.433e-04
+2025-10-17 11:44:41,086 - INFO: Epoch [7500/40000], Total Loss: 5.714e-06, Main Loss: 5.714e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 9.337e-04
+2025-10-17 11:44:42,192 - INFO: Epoch [8000/40000], Total Loss: 5.651e-06, Main Loss: 5.651e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 9.233e-04
+2025-10-17 11:44:43,273 - INFO: Epoch [8500/40000], Total Loss: 5.612e-06, Main Loss: 5.612e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 9.124e-04
+2025-10-17 11:44:44,383 - INFO: Epoch [9000/40000], Total Loss: 5.572e-06, Main Loss: 5.572e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 9.007e-04
+2025-10-17 11:44:45,481 - INFO: Epoch [9500/40000], Total Loss: 5.642e-06, Main Loss: 5.642e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 8.884e-04
+2025-10-17 11:44:46,563 - INFO: Epoch [10000/40000], Total Loss: 5.473e-06, Main Loss: 5.473e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 8.755e-04
+2025-10-17 11:44:47,667 - INFO: Epoch [10500/40000], Total Loss: 5.671e-06, Main Loss: 5.671e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 8.620e-04
+2025-10-17 11:44:48,776 - INFO: Epoch [11000/40000], Total Loss: 5.410e-06, Main Loss: 5.410e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 8.479e-04
+2025-10-17 11:44:49,878 - INFO: Epoch [11500/40000], Total Loss: 5.387e-06, Main Loss: 5.387e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 8.332e-04
+2025-10-17 11:44:51,045 - INFO: Epoch [12000/40000], Total Loss: 5.355e-06, Main Loss: 5.355e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 8.180e-04
+2025-10-17 11:44:52,759 - INFO: Epoch [12500/40000], Total Loss: 5.425e-06, Main Loss: 5.425e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 8.023e-04
+2025-10-17 11:44:53,915 - INFO: Epoch [13000/40000], Total Loss: 5.312e-06, Main Loss: 5.312e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 7.862e-04
+2025-10-17 11:44:55,092 - INFO: Epoch [13500/40000], Total Loss: 5.283e-06, Main Loss: 5.283e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 7.695e-04
+2025-10-17 11:44:56,288 - INFO: Epoch [14000/40000], Total Loss: 5.295e-06, Main Loss: 5.295e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 7.525e-04
+2025-10-17 11:44:57,485 - INFO: Epoch [14500/40000], Total Loss: 5.331e-06, Main Loss: 5.331e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 7.350e-04
+2025-10-17 11:44:58,588 - INFO: Epoch [15000/40000], Total Loss: 5.312e-06, Main Loss: 5.312e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 7.172e-04
+2025-10-17 11:44:59,656 - INFO: Epoch [15500/40000], Total Loss: 5.305e-06, Main Loss: 5.305e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 6.990e-04
+2025-10-17 11:45:00,738 - INFO: Epoch [16000/40000], Total Loss: 1.023e-05, Main Loss: 1.023e-05, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 6.805e-04
+2025-10-17 11:45:01,882 - INFO: Epoch [16500/40000], Total Loss: 5.372e-06, Main Loss: 5.372e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 6.617e-04
+2025-10-17 11:45:02,990 - INFO: Epoch [17000/40000], Total Loss: 6.444e-06, Main Loss: 6.444e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 6.427e-04
+2025-10-17 11:45:04,081 - INFO: Epoch [17500/40000], Total Loss: 5.323e-06, Main Loss: 5.323e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 6.234e-04
+2025-10-17 11:45:05,190 - INFO: Epoch [18000/40000], Total Loss: 5.308e-06, Main Loss: 5.308e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 6.040e-04
+2025-10-17 11:45:06,370 - INFO: Epoch [18500/40000], Total Loss: 5.299e-06, Main Loss: 5.299e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 5.844e-04
+2025-10-17 11:45:07,489 - INFO: Epoch [19000/40000], Total Loss: 5.293e-06, Main Loss: 5.293e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 5.646e-04
+2025-10-17 11:45:08,656 - INFO: Epoch [19500/40000], Total Loss: 5.287e-06, Main Loss: 5.287e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 5.448e-04
+2025-10-17 11:45:09,812 - INFO: Epoch [20000/40000], Total Loss: 5.278e-06, Main Loss: 5.278e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 5.249e-04
+2025-10-17 11:45:10,912 - INFO: Epoch [20500/40000], Total Loss: 5.272e-06, Main Loss: 5.272e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 5.050e-04
+2025-10-17 11:45:11,995 - INFO: Epoch [21000/40000], Total Loss: 5.264e-06, Main Loss: 5.264e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 4.850e-04
+2025-10-17 11:45:13,095 - INFO: Epoch [21500/40000], Total Loss: 5.256e-06, Main Loss: 5.256e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 4.651e-04
+2025-10-17 11:45:14,233 - INFO: Epoch [22000/40000], Total Loss: 5.247e-06, Main Loss: 5.247e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 4.453e-04
+2025-10-17 11:45:15,430 - INFO: Epoch [22500/40000], Total Loss: 5.239e-06, Main Loss: 5.239e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 4.256e-04
+2025-10-17 11:45:16,563 - INFO: Epoch [23000/40000], Total Loss: 5.231e-06, Main Loss: 5.231e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 4.059e-04
+2025-10-17 11:45:17,679 - INFO: Epoch [23500/40000], Total Loss: 5.852e-06, Main Loss: 5.852e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 3.865e-04
+2025-10-17 11:45:18,767 - INFO: Epoch [24000/40000], Total Loss: 5.211e-06, Main Loss: 5.211e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 3.672e-04
+2025-10-17 11:45:19,872 - INFO: Epoch [24500/40000], Total Loss: 5.197e-06, Main Loss: 5.197e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 3.482e-04
+2025-10-17 11:45:21,013 - INFO: Epoch [25000/40000], Total Loss: 5.189e-06, Main Loss: 5.189e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 3.294e-04
+2025-10-17 11:45:22,158 - INFO: Epoch [25500/40000], Total Loss: 5.248e-06, Main Loss: 5.248e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 3.109e-04
+2025-10-17 11:45:23,279 - INFO: Epoch [26000/40000], Total Loss: 5.271e-06, Main Loss: 5.271e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 2.928e-04
+2025-10-17 11:45:24,403 - INFO: Epoch [26500/40000], Total Loss: 5.185e-06, Main Loss: 5.185e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 2.749e-04
+2025-10-17 11:45:25,493 - INFO: Epoch [27000/40000], Total Loss: 5.182e-06, Main Loss: 5.182e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 2.575e-04
+2025-10-17 11:45:26,577 - INFO: Epoch [27500/40000], Total Loss: 5.453e-06, Main Loss: 5.453e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 2.404e-04
+2025-10-17 11:45:27,679 - INFO: Epoch [28000/40000], Total Loss: 5.177e-06, Main Loss: 5.177e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 2.238e-04
+2025-10-17 11:45:28,774 - INFO: Epoch [28500/40000], Total Loss: 5.176e-06, Main Loss: 5.176e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 2.076e-04
+2025-10-17 11:45:29,901 - INFO: Epoch [29000/40000], Total Loss: 5.175e-06, Main Loss: 5.175e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 1.919e-04
+2025-10-17 11:45:31,047 - INFO: Epoch [29500/40000], Total Loss: 5.174e-06, Main Loss: 5.174e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 1.767e-04
+2025-10-17 11:45:32,129 - INFO: Epoch [30000/40000], Total Loss: 5.173e-06, Main Loss: 5.173e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 1.621e-04
+2025-10-17 11:45:33,209 - INFO: Epoch [30500/40000], Total Loss: 5.171e-06, Main Loss: 5.171e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 1.480e-04
+2025-10-17 11:45:34,292 - INFO: Epoch [31000/40000], Total Loss: 5.170e-06, Main Loss: 5.170e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 1.345e-04
+2025-10-17 11:45:35,393 - INFO: Epoch [31500/40000], Total Loss: 5.169e-06, Main Loss: 5.169e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 1.215e-04
+2025-10-17 11:45:36,491 - INFO: Epoch [32000/40000], Total Loss: 5.168e-06, Main Loss: 5.168e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 1.093e-04
+2025-10-17 11:45:37,606 - INFO: Epoch [32500/40000], Total Loss: 5.167e-06, Main Loss: 5.167e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 9.760e-05
+2025-10-17 11:45:38,690 - INFO: Epoch [33000/40000], Total Loss: 5.169e-06, Main Loss: 5.169e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 8.661e-05
+2025-10-17 11:45:39,791 - INFO: Epoch [33500/40000], Total Loss: 5.158e-06, Main Loss: 5.158e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 7.630e-05
+2025-10-17 11:45:40,891 - INFO: Epoch [34000/40000], Total Loss: 5.154e-06, Main Loss: 5.154e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 6.668e-05
+2025-10-17 11:45:41,985 - INFO: Epoch [34500/40000], Total Loss: 5.152e-06, Main Loss: 5.152e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 5.777e-05
+2025-10-17 11:45:43,089 - INFO: Epoch [35000/40000], Total Loss: 5.146e-06, Main Loss: 5.146e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 4.959e-05
+2025-10-17 11:45:44,180 - INFO: Epoch [35500/40000], Total Loss: 5.142e-06, Main Loss: 5.142e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 4.215e-05
+2025-10-17 11:45:45,281 - INFO: Epoch [36000/40000], Total Loss: 5.140e-06, Main Loss: 5.140e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 3.546e-05
+2025-10-17 11:45:46,396 - INFO: Epoch [36500/40000], Total Loss: 5.138e-06, Main Loss: 5.138e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 2.953e-05
+2025-10-17 11:45:47,499 - INFO: Epoch [37000/40000], Total Loss: 5.137e-06, Main Loss: 5.137e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 2.437e-05
+2025-10-17 11:45:48,592 - INFO: Epoch [37500/40000], Total Loss: 5.135e-06, Main Loss: 5.135e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 2.000e-05
+2025-10-17 11:45:49,669 - INFO: Epoch [38000/40000], Total Loss: 5.134e-06, Main Loss: 5.134e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 1.640e-05
+2025-10-17 11:45:50,744 - INFO: Epoch [38500/40000], Total Loss: 5.133e-06, Main Loss: 5.133e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 1.360e-05
+2025-10-17 11:45:51,854 - INFO: Epoch [39000/40000], Total Loss: 5.132e-06, Main Loss: 5.132e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 1.160e-05
+2025-10-17 11:45:52,957 - INFO: Epoch [39500/40000], Total Loss: 5.131e-06, Main Loss: 5.131e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 1.040e-05
+2025-10-17 11:45:54,045 - INFO: Epoch [39999/40000], Total Loss: 5.129e-06, Main Loss: 5.129e-06, Range Loss: 0.000e+00, Prox Loss: 0.000e+00, LR: 1.000e-05
+2025-10-17 11:45:54,059 - INFO: MAE: 0.0013626766, MSE: 0.0000051292,
+2025-10-17 11:45:54,059 - INFO: Model saved to log/gelu/16entry.pt
+2025-10-17 11:45:54,059 - INFO: Training results saved to log/gelu/16entry.json

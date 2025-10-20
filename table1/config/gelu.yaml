@@ -1,6 +1,6 @@
 func_name: gelu
 criterion_name: 'mae'
-num_entries: 8
+num_entries: 7
 x_range: [-4.0, 2.0]
 train: True
 train_epochs: 40000
@@ -9,6 +9,6 @@ weight_decay: 1.0e-4
 range_weight: 0.1
 prox_weight: 0.1
 qat: True
-bits: 8
+bits: 11
 qat_epochs: 5000
 qat_lr: 1.0e-3

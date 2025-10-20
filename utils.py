@@ -9,18 +9,31 @@ def get_target_function(func_name):
         'gelu': nn.functional.gelu,
         'exp': torch.exp,
         'div': lambda x: 1 / x,
+        'rsqrt': lambda x: x ** -0.5,
         'sigmoid': torch.sigmoid,
         'tanh': torch.tanh,
         'silu': nn.functional.silu,
         'elu': nn.functional.elu,
-        'hardsigmoid': nn.functional.hardsigmoid,
-        'hardswish': nn.functional.hardswish,
+        'hsigmoid': nn.functional.hardsigmoid,
+        'hswish': nn.functional.hardswish,
     }
 
     if func_name not in func_dict:
         raise ValueError(f"Unsupported function: {func_name}. "
                          f"Supported functions are: {list(func_dict.keys())}")
     return func_dict[func_name]
+
+
+def get_loss_criterion(criterion_name):
+    criterion_dict = {
+        'mae': nn.functional.l1_loss,
+        'mse': nn.functional.mse_loss,
+    }
+
+    if criterion_name not in criterion_dict:
+        raise ValueError(f"Unsupported criterion: {criterion_name}. "
+                         f"Supported criterion are: {list(criterion_dict.keys())}")
+    return criterion_dict[criterion_name]
 
 
 def setup_logging(save_path):

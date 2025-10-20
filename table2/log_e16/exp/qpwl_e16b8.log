@@ -1,0 +1,194 @@
+2025-10-17 11:29:30,920 - INFO: --- Training Interval[0]: (-8.0, -7.5625) ---
+2025-10-17 11:29:30,923 - INFO:   Interval 0, Epoch    0, Loss: 1.215e-05, LR: 1.00e-03
+2025-10-17 11:29:31,715 - INFO:   Interval 0, Epoch  500, Loss: 1.215e-05, LR: 9.75e-04
+2025-10-17 11:29:32,456 - INFO:   Interval 0, Epoch 1000, Loss: 2.591e-05, LR: 9.04e-04
+2025-10-17 11:29:33,196 - INFO:   Interval 0, Epoch 1500, Loss: 1.215e-05, LR: 7.94e-04
+2025-10-17 11:29:33,983 - INFO:   Interval 0, Epoch 2000, Loss: 1.215e-05, LR: 6.55e-04
+2025-10-17 11:29:34,732 - INFO:   Interval 0, Epoch 2500, Loss: 1.693e-05, LR: 5.00e-04
+2025-10-17 11:29:35,500 - INFO:   Interval 0, Epoch 3000, Loss: 1.693e-05, LR: 3.46e-04
+2025-10-17 11:29:36,261 - INFO:   Interval 0, Epoch 3500, Loss: 1.215e-05, LR: 2.07e-04
+2025-10-17 11:29:37,065 - INFO:   Interval 0, Epoch 4000, Loss: 1.693e-05, LR: 9.62e-05
+2025-10-17 11:29:37,817 - INFO:   Interval 0, Epoch 4500, Loss: 1.215e-05, LR: 2.54e-05
+2025-10-17 11:29:38,548 - INFO:   Interval 0, Epoch 4999, Loss: 1.215e-05, LR: 1.00e-06
+2025-10-17 11:29:38,549 - INFO: --- Training Interval[1]: (-7.5625, -6.4375) ---
+2025-10-17 11:29:38,551 - INFO:   Interval 1, Epoch    0, Loss: 2.341e-09, LR: 1.00e-03
+2025-10-17 11:29:39,394 - INFO:   Interval 1, Epoch  500, Loss: 2.341e-09, LR: 9.75e-04
+2025-10-17 11:29:40,175 - INFO:   Interval 1, Epoch 1000, Loss: 2.341e-09, LR: 9.04e-04
+2025-10-17 11:29:40,957 - INFO:   Interval 1, Epoch 1500, Loss: 2.341e-09, LR: 7.94e-04
+2025-10-17 11:29:41,725 - INFO:   Interval 1, Epoch 2000, Loss: 9.253e-07, LR: 6.55e-04
+2025-10-17 11:29:42,545 - INFO:   Interval 1, Epoch 2500, Loss: 2.341e-09, LR: 5.00e-04
+2025-10-17 11:29:43,330 - INFO:   Interval 1, Epoch 3000, Loss: 2.341e-09, LR: 3.46e-04
+2025-10-17 11:29:44,133 - INFO:   Interval 1, Epoch 3500, Loss: 2.341e-09, LR: 2.07e-04
+2025-10-17 11:29:44,908 - INFO:   Interval 1, Epoch 4000, Loss: 2.341e-09, LR: 9.62e-05
+2025-10-17 11:29:45,729 - INFO:   Interval 1, Epoch 4500, Loss: 2.341e-09, LR: 2.54e-05
+2025-10-17 11:29:46,519 - INFO:   Interval 1, Epoch 4999, Loss: 2.341e-09, LR: 1.00e-06
+2025-10-17 11:29:46,519 - INFO: --- Training Interval[2]: (-6.4375, -5.625) ---
+2025-10-17 11:29:46,521 - INFO:   Interval 2, Epoch    0, Loss: 6.574e-06, LR: 1.00e-03
+2025-10-17 11:29:47,349 - INFO:   Interval 2, Epoch  500, Loss: 1.110e-05, LR: 9.75e-04
+2025-10-17 11:29:48,201 - INFO:   Interval 2, Epoch 1000, Loss: 1.110e-05, LR: 9.04e-04
+2025-10-17 11:29:48,996 - INFO:   Interval 2, Epoch 1500, Loss: 1.110e-05, LR: 7.94e-04
+2025-10-17 11:29:49,883 - INFO:   Interval 2, Epoch 2000, Loss: 1.110e-05, LR: 6.55e-04
+2025-10-17 11:29:50,698 - INFO:   Interval 2, Epoch 2500, Loss: 1.110e-05, LR: 5.00e-04
+2025-10-17 11:29:51,498 - INFO:   Interval 2, Epoch 3000, Loss: 1.110e-05, LR: 3.46e-04
+2025-10-17 11:29:52,265 - INFO:   Interval 2, Epoch 3500, Loss: 1.110e-05, LR: 2.07e-04
+2025-10-17 11:29:53,025 - INFO:   Interval 2, Epoch 4000, Loss: 1.110e-05, LR: 9.62e-05
+2025-10-17 11:29:53,833 - INFO:   Interval 2, Epoch 4500, Loss: 1.110e-05, LR: 2.54e-05
+2025-10-17 11:29:54,616 - INFO:   Interval 2, Epoch 4999, Loss: 1.110e-05, LR: 1.00e-06
+2025-10-17 11:29:54,616 - INFO: --- Training Interval[3]: (-5.625, -5.0) ---
+2025-10-17 11:29:54,618 - INFO:   Interval 3, Epoch    0, Loss: 1.634e-06, LR: 1.00e-03
+2025-10-17 11:29:55,411 - INFO:   Interval 3, Epoch  500, Loss: 9.536e-08, LR: 9.75e-04
+2025-10-17 11:29:56,266 - INFO:   Interval 3, Epoch 1000, Loss: 9.536e-08, LR: 9.04e-04
+2025-10-17 11:29:57,015 - INFO:   Interval 3, Epoch 1500, Loss: 9.536e-08, LR: 7.94e-04
+2025-10-17 11:29:57,720 - INFO:   Interval 3, Epoch 2000, Loss: 9.536e-08, LR: 6.55e-04
+2025-10-17 11:29:58,493 - INFO:   Interval 3, Epoch 2500, Loss: 9.536e-08, LR: 5.00e-04
+2025-10-17 11:29:59,238 - INFO:   Interval 3, Epoch 3000, Loss: 9.536e-08, LR: 3.46e-04
+2025-10-17 11:29:59,965 - INFO:   Interval 3, Epoch 3500, Loss: 9.536e-08, LR: 2.07e-04
+2025-10-17 11:30:00,792 - INFO:   Interval 3, Epoch 4000, Loss: 9.536e-08, LR: 9.62e-05
+2025-10-17 11:30:01,709 - INFO:   Interval 3, Epoch 4500, Loss: 9.536e-08, LR: 2.54e-05
+2025-10-17 11:30:02,485 - INFO:   Interval 3, Epoch 4999, Loss: 9.536e-08, LR: 1.00e-06
+2025-10-17 11:30:02,485 - INFO: --- Training Interval[4]: (-5.0, -4.375) ---
+2025-10-17 11:30:02,487 - INFO:   Interval 4, Epoch    0, Loss: 2.059e-06, LR: 1.00e-03
+2025-10-17 11:30:03,313 - INFO:   Interval 4, Epoch  500, Loss: 9.959e-06, LR: 9.75e-04
+2025-10-17 11:30:04,137 - INFO:   Interval 4, Epoch 1000, Loss: 9.959e-06, LR: 9.04e-04
+2025-10-17 11:30:04,949 - INFO:   Interval 4, Epoch 1500, Loss: 5.798e-06, LR: 7.94e-04
+2025-10-17 11:30:05,727 - INFO:   Interval 4, Epoch 2000, Loss: 9.959e-06, LR: 6.55e-04
+2025-10-17 11:30:06,498 - INFO:   Interval 4, Epoch 2500, Loss: 4.758e-06, LR: 5.00e-04
+2025-10-17 11:30:07,366 - INFO:   Interval 4, Epoch 3000, Loss: 5.798e-06, LR: 3.46e-04
+2025-10-17 11:30:08,195 - INFO:   Interval 4, Epoch 3500, Loss: 5.798e-06, LR: 2.07e-04
+2025-10-17 11:30:09,005 - INFO:   Interval 4, Epoch 4000, Loss: 4.758e-06, LR: 9.62e-05
+2025-10-17 11:30:09,723 - INFO:   Interval 4, Epoch 4500, Loss: 4.758e-06, LR: 2.54e-05
+2025-10-17 11:30:10,510 - INFO:   Interval 4, Epoch 4999, Loss: 5.798e-06, LR: 1.00e-06
+2025-10-17 11:30:10,510 - INFO: --- Training Interval[5]: (-4.375, -3.75) ---
+2025-10-17 11:30:10,512 - INFO:   Interval 5, Epoch    0, Loss: 6.642e-08, LR: 1.00e-03
+2025-10-17 11:30:11,317 - INFO:   Interval 5, Epoch  500, Loss: 6.642e-08, LR: 9.75e-04
+2025-10-17 11:30:12,175 - INFO:   Interval 5, Epoch 1000, Loss: 1.082e-06, LR: 9.04e-04
+2025-10-17 11:30:12,980 - INFO:   Interval 5, Epoch 1500, Loss: 1.082e-06, LR: 7.94e-04
+2025-10-17 11:30:13,763 - INFO:   Interval 5, Epoch 2000, Loss: 1.082e-06, LR: 6.55e-04
+2025-10-17 11:30:14,513 - INFO:   Interval 5, Epoch 2500, Loss: 1.082e-06, LR: 5.00e-04
+2025-10-17 11:30:15,278 - INFO:   Interval 5, Epoch 3000, Loss: 1.082e-06, LR: 3.46e-04
+2025-10-17 11:30:16,095 - INFO:   Interval 5, Epoch 3500, Loss: 1.082e-06, LR: 2.07e-04
+2025-10-17 11:30:16,931 - INFO:   Interval 5, Epoch 4000, Loss: 1.082e-06, LR: 9.62e-05
+2025-10-17 11:30:17,683 - INFO:   Interval 5, Epoch 4500, Loss: 1.557e-05, LR: 2.54e-05
+2025-10-17 11:30:18,619 - INFO:   Interval 5, Epoch 4999, Loss: 8.838e-06, LR: 1.00e-06
+2025-10-17 11:30:18,619 - INFO: --- Training Interval[6]: (-3.75, -3.1875) ---
+2025-10-17 11:30:18,621 - INFO:   Interval 6, Epoch    0, Loss: 6.953e-06, LR: 1.00e-03
+2025-10-17 11:30:19,397 - INFO:   Interval 6, Epoch  500, Loss: 5.702e-07, LR: 9.75e-04
+2025-10-17 11:30:20,214 - INFO:   Interval 6, Epoch 1000, Loss: 1.817e-06, LR: 9.04e-04
+2025-10-17 11:30:21,062 - INFO:   Interval 6, Epoch 1500, Loss: 3.992e-07, LR: 7.94e-04
+2025-10-17 11:30:21,883 - INFO:   Interval 6, Epoch 2000, Loss: 5.133e-05, LR: 6.55e-04
+2025-10-17 11:30:22,685 - INFO:   Interval 6, Epoch 2500, Loss: 3.992e-07, LR: 5.00e-04
+2025-10-17 11:30:23,409 - INFO:   Interval 6, Epoch 3000, Loss: 3.992e-07, LR: 3.46e-04
+2025-10-17 11:30:24,229 - INFO:   Interval 6, Epoch 3500, Loss: 3.992e-07, LR: 2.07e-04
+2025-10-17 11:30:25,070 - INFO:   Interval 6, Epoch 4000, Loss: 3.992e-07, LR: 9.62e-05
+2025-10-17 11:30:25,905 - INFO:   Interval 6, Epoch 4500, Loss: 3.992e-07, LR: 2.54e-05
+2025-10-17 11:30:26,699 - INFO:   Interval 6, Epoch 4999, Loss: 2.729e-06, LR: 1.00e-06
+2025-10-17 11:30:26,699 - INFO: --- Training Interval[7]: (-3.1875, -2.6875) ---
+2025-10-17 11:30:26,701 - INFO:   Interval 7, Epoch    0, Loss: 1.988e-05, LR: 1.00e-03
+2025-10-17 11:30:27,481 - INFO:   Interval 7, Epoch  500, Loss: 5.296e-07, LR: 9.75e-04
+2025-10-17 11:30:28,317 - INFO:   Interval 7, Epoch 1000, Loss: 5.296e-07, LR: 9.04e-04
+2025-10-17 11:30:29,136 - INFO:   Interval 7, Epoch 1500, Loss: 5.296e-07, LR: 7.94e-04
+2025-10-17 11:30:29,872 - INFO:   Interval 7, Epoch 2000, Loss: 5.296e-07, LR: 6.55e-04
+2025-10-17 11:30:30,646 - INFO:   Interval 7, Epoch 2500, Loss: 5.296e-07, LR: 5.00e-04
+2025-10-17 11:30:31,494 - INFO:   Interval 7, Epoch 3000, Loss: 5.296e-07, LR: 3.46e-04
+2025-10-17 11:30:32,271 - INFO:   Interval 7, Epoch 3500, Loss: 2.297e-06, LR: 2.07e-04
+2025-10-17 11:30:33,004 - INFO:   Interval 7, Epoch 4000, Loss: 5.296e-07, LR: 9.62e-05
+2025-10-17 11:30:33,811 - INFO:   Interval 7, Epoch 4500, Loss: 2.297e-06, LR: 2.54e-05
+2025-10-17 11:30:34,574 - INFO:   Interval 7, Epoch 4999, Loss: 5.296e-07, LR: 1.00e-06
+2025-10-17 11:30:34,574 - INFO: --- Training Interval[8]: (-2.6875, -2.25) ---
+2025-10-17 11:30:34,576 - INFO:   Interval 8, Epoch    0, Loss: 8.062e-07, LR: 1.00e-03
+2025-10-17 11:30:35,395 - INFO:   Interval 8, Epoch  500, Loss: 8.062e-07, LR: 9.75e-04
+2025-10-17 11:30:36,134 - INFO:   Interval 8, Epoch 1000, Loss: 1.909e-06, LR: 9.04e-04
+2025-10-17 11:30:36,952 - INFO:   Interval 8, Epoch 1500, Loss: 1.909e-06, LR: 7.94e-04
+2025-10-17 11:30:37,864 - INFO:   Interval 8, Epoch 2000, Loss: 7.959e-06, LR: 6.55e-04
+2025-10-17 11:30:38,653 - INFO:   Interval 8, Epoch 2500, Loss: 1.909e-06, LR: 5.00e-04
+2025-10-17 11:30:39,423 - INFO:   Interval 8, Epoch 3000, Loss: 7.959e-06, LR: 3.46e-04
+2025-10-17 11:30:40,204 - INFO:   Interval 8, Epoch 3500, Loss: 7.959e-06, LR: 2.07e-04
+2025-10-17 11:30:41,040 - INFO:   Interval 8, Epoch 4000, Loss: 1.909e-06, LR: 9.62e-05
+2025-10-17 11:30:41,827 - INFO:   Interval 8, Epoch 4500, Loss: 1.909e-06, LR: 2.54e-05
+2025-10-17 11:30:42,641 - INFO:   Interval 8, Epoch 4999, Loss: 1.909e-06, LR: 1.00e-06
+2025-10-17 11:30:42,641 - INFO: --- Training Interval[9]: (-2.25, -1.875) ---
+2025-10-17 11:30:42,643 - INFO:   Interval 9, Epoch    0, Loss: 1.075e-06, LR: 1.00e-03
+2025-10-17 11:30:43,438 - INFO:   Interval 9, Epoch  500, Loss: 2.482e-05, LR: 9.75e-04
+2025-10-17 11:30:44,248 - INFO:   Interval 9, Epoch 1000, Loss: 1.573e-06, LR: 9.04e-04
+2025-10-17 11:30:45,042 - INFO:   Interval 9, Epoch 1500, Loss: 1.573e-06, LR: 7.94e-04
+2025-10-17 11:30:45,898 - INFO:   Interval 9, Epoch 2000, Loss: 1.573e-06, LR: 6.55e-04
+2025-10-17 11:30:46,717 - INFO:   Interval 9, Epoch 2500, Loss: 1.573e-06, LR: 5.00e-04
+2025-10-17 11:30:47,497 - INFO:   Interval 9, Epoch 3000, Loss: 1.573e-06, LR: 3.46e-04
+2025-10-17 11:30:48,240 - INFO:   Interval 9, Epoch 3500, Loss: 1.573e-06, LR: 2.07e-04
+2025-10-17 11:30:49,132 - INFO:   Interval 9, Epoch 4000, Loss: 1.573e-06, LR: 9.62e-05
+2025-10-17 11:30:49,903 - INFO:   Interval 9, Epoch 4500, Loss: 1.573e-06, LR: 2.54e-05
+2025-10-17 11:30:50,763 - INFO:   Interval 9, Epoch 4999, Loss: 1.573e-06, LR: 1.00e-06
+2025-10-17 11:30:50,764 - INFO: --- Training Interval[10]: (-1.875, -1.5) ---
+2025-10-17 11:30:50,766 - INFO:   Interval 10, Epoch    0, Loss: 7.119e-06, LR: 1.00e-03
+2025-10-17 11:30:51,528 - INFO:   Interval 10, Epoch  500, Loss: 1.042e-06, LR: 9.75e-04
+2025-10-17 11:30:52,400 - INFO:   Interval 10, Epoch 1000, Loss: 1.042e-06, LR: 9.04e-04
+2025-10-17 11:30:53,230 - INFO:   Interval 10, Epoch 1500, Loss: 1.042e-06, LR: 7.94e-04
+2025-10-17 11:30:53,961 - INFO:   Interval 10, Epoch 2000, Loss: 1.042e-06, LR: 6.55e-04
+2025-10-17 11:30:54,789 - INFO:   Interval 10, Epoch 2500, Loss: 1.042e-06, LR: 5.00e-04
+2025-10-17 11:30:55,684 - INFO:   Interval 10, Epoch 3000, Loss: 1.042e-06, LR: 3.46e-04
+2025-10-17 11:30:56,437 - INFO:   Interval 10, Epoch 3500, Loss: 1.042e-06, LR: 2.07e-04
+2025-10-17 11:30:57,179 - INFO:   Interval 10, Epoch 4000, Loss: 1.042e-06, LR: 9.62e-05
+2025-10-17 11:30:57,868 - INFO:   Interval 10, Epoch 4500, Loss: 1.042e-06, LR: 2.54e-05
+2025-10-17 11:30:58,644 - INFO:   Interval 10, Epoch 4999, Loss: 1.042e-06, LR: 1.00e-06
+2025-10-17 11:30:58,644 - INFO: --- Training Interval[11]: (-1.5, -1.125) ---
+2025-10-17 11:30:58,645 - INFO:   Interval 11, Epoch    0, Loss: 1.236e-05, LR: 1.00e-03
+2025-10-17 11:30:59,400 - INFO:   Interval 11, Epoch  500, Loss: 2.345e-05, LR: 9.75e-04
+2025-10-17 11:31:00,151 - INFO:   Interval 11, Epoch 1000, Loss: 3.403e-05, LR: 9.04e-04
+2025-10-17 11:31:00,921 - INFO:   Interval 11, Epoch 1500, Loss: 3.403e-05, LR: 7.94e-04
+2025-10-17 11:31:01,641 - INFO:   Interval 11, Epoch 2000, Loss: 1.566e-04, LR: 6.55e-04
+2025-10-17 11:31:02,393 - INFO:   Interval 11, Epoch 2500, Loss: 6.973e-06, LR: 5.00e-04
+2025-10-17 11:31:03,136 - INFO:   Interval 11, Epoch 3000, Loss: 3.403e-05, LR: 3.46e-04
+2025-10-17 11:31:03,881 - INFO:   Interval 11, Epoch 3500, Loss: 3.403e-05, LR: 2.07e-04
+2025-10-17 11:31:04,736 - INFO:   Interval 11, Epoch 4000, Loss: 3.403e-05, LR: 9.62e-05
+2025-10-17 11:31:05,548 - INFO:   Interval 11, Epoch 4500, Loss: 6.973e-06, LR: 2.54e-05
+2025-10-17 11:31:06,337 - INFO:   Interval 11, Epoch 4999, Loss: 6.973e-06, LR: 1.00e-06
+2025-10-17 11:31:06,338 - INFO: --- Training Interval[12]: (-1.125, -0.8125) ---
+2025-10-17 11:31:06,340 - INFO:   Interval 12, Epoch    0, Loss: 5.795e-06, LR: 1.00e-03
+2025-10-17 11:31:07,161 - INFO:   Interval 12, Epoch  500, Loss: 3.367e-05, LR: 9.75e-04
+2025-10-17 11:31:07,908 - INFO:   Interval 12, Epoch 1000, Loss: 5.795e-06, LR: 9.04e-04
+2025-10-17 11:31:08,758 - INFO:   Interval 12, Epoch 1500, Loss: 5.795e-06, LR: 7.94e-04
+2025-10-17 11:31:09,568 - INFO:   Interval 12, Epoch 2000, Loss: 7.011e-06, LR: 6.55e-04
+2025-10-17 11:31:10,380 - INFO:   Interval 12, Epoch 2500, Loss: 3.367e-05, LR: 5.00e-04
+2025-10-17 11:31:11,195 - INFO:   Interval 12, Epoch 3000, Loss: 7.011e-06, LR: 3.46e-04
+2025-10-17 11:31:11,992 - INFO:   Interval 12, Epoch 3500, Loss: 3.367e-05, LR: 2.07e-04
+2025-10-17 11:31:12,836 - INFO:   Interval 12, Epoch 4000, Loss: 3.367e-05, LR: 9.62e-05
+2025-10-17 11:31:13,606 - INFO:   Interval 12, Epoch 4500, Loss: 3.367e-05, LR: 2.54e-05
+2025-10-17 11:31:14,481 - INFO:   Interval 12, Epoch 4999, Loss: 7.011e-06, LR: 1.00e-06
+2025-10-17 11:31:14,482 - INFO: --- Training Interval[13]: (-0.8125, -0.5625) ---
+2025-10-17 11:31:14,483 - INFO:   Interval 13, Epoch    0, Loss: 4.374e-06, LR: 1.00e-03
+2025-10-17 11:31:15,244 - INFO:   Interval 13, Epoch  500, Loss: 1.490e-05, LR: 9.75e-04
+2025-10-17 11:31:16,041 - INFO:   Interval 13, Epoch 1000, Loss: 1.490e-05, LR: 9.04e-04
+2025-10-17 11:31:16,870 - INFO:   Interval 13, Epoch 1500, Loss: 1.863e-05, LR: 7.94e-04
+2025-10-17 11:31:17,673 - INFO:   Interval 13, Epoch 2000, Loss: 1.863e-05, LR: 6.55e-04
+2025-10-17 11:31:18,418 - INFO:   Interval 13, Epoch 2500, Loss: 1.490e-05, LR: 5.00e-04
+2025-10-17 11:31:19,160 - INFO:   Interval 13, Epoch 3000, Loss: 1.490e-05, LR: 3.46e-04
+2025-10-17 11:31:19,924 - INFO:   Interval 13, Epoch 3500, Loss: 9.202e-05, LR: 2.07e-04
+2025-10-17 11:31:20,743 - INFO:   Interval 13, Epoch 4000, Loss: 1.490e-05, LR: 9.62e-05
+2025-10-17 11:31:21,517 - INFO:   Interval 13, Epoch 4500, Loss: 1.863e-05, LR: 2.54e-05
+2025-10-17 11:31:22,343 - INFO:   Interval 13, Epoch 4999, Loss: 1.490e-05, LR: 1.00e-06
+2025-10-17 11:31:22,343 - INFO: --- Training Interval[14]: (-0.5625, -0.25) ---
+2025-10-17 11:31:22,346 - INFO:   Interval 14, Epoch    0, Loss: 1.832e-05, LR: 1.00e-03
+2025-10-17 11:31:23,178 - INFO:   Interval 14, Epoch  500, Loss: 5.058e-05, LR: 9.75e-04
+2025-10-17 11:31:24,033 - INFO:   Interval 14, Epoch 1000, Loss: 2.466e-05, LR: 9.04e-04
+2025-10-17 11:31:24,830 - INFO:   Interval 14, Epoch 1500, Loss: 7.334e-06, LR: 7.94e-04
+2025-10-17 11:31:25,623 - INFO:   Interval 14, Epoch 2000, Loss: 7.334e-06, LR: 6.55e-04
+2025-10-17 11:31:26,364 - INFO:   Interval 14, Epoch 2500, Loss: 5.058e-05, LR: 5.00e-04
+2025-10-17 11:31:27,097 - INFO:   Interval 14, Epoch 3000, Loss: 7.334e-06, LR: 3.46e-04
+2025-10-17 11:31:27,835 - INFO:   Interval 14, Epoch 3500, Loss: 7.334e-06, LR: 2.07e-04
+2025-10-17 11:31:28,614 - INFO:   Interval 14, Epoch 4000, Loss: 7.334e-06, LR: 9.62e-05
+2025-10-17 11:31:29,418 - INFO:   Interval 14, Epoch 4500, Loss: 7.334e-06, LR: 2.54e-05
+2025-10-17 11:31:30,152 - INFO:   Interval 14, Epoch 4999, Loss: 5.058e-05, LR: 1.00e-06
+2025-10-17 11:31:30,152 - INFO: --- Training Interval[15]: (-0.25, 0.0) ---
+2025-10-17 11:31:30,157 - INFO:   Interval 15, Epoch    0, Loss: 1.305e-05, LR: 1.00e-03
+2025-10-17 11:31:30,968 - INFO:   Interval 15, Epoch  500, Loss: 1.305e-05, LR: 9.75e-04
+2025-10-17 11:31:31,753 - INFO:   Interval 15, Epoch 1000, Loss: 1.305e-05, LR: 9.04e-04
+2025-10-17 11:31:32,523 - INFO:   Interval 15, Epoch 1500, Loss: 1.947e-05, LR: 7.94e-04
+2025-10-17 11:31:33,368 - INFO:   Interval 15, Epoch 2000, Loss: 1.305e-05, LR: 6.55e-04
+2025-10-17 11:31:34,100 - INFO:   Interval 15, Epoch 2500, Loss: 3.858e-05, LR: 5.00e-04
+2025-10-17 11:31:34,957 - INFO:   Interval 15, Epoch 3000, Loss: 1.305e-05, LR: 3.46e-04
+2025-10-17 11:31:35,742 - INFO:   Interval 15, Epoch 3500, Loss: 3.858e-05, LR: 2.07e-04
+2025-10-17 11:31:36,536 - INFO:   Interval 15, Epoch 4000, Loss: 1.305e-05, LR: 9.62e-05
+2025-10-17 11:31:37,316 - INFO:   Interval 15, Epoch 4500, Loss: 1.947e-05, LR: 2.54e-05
+2025-10-17 11:31:38,168 - INFO:   Interval 15, Epoch 4999, Loss: 1.305e-05, LR: 1.00e-06
+2025-10-17 11:31:41,332 - INFO: Final MAE: 1.206e-03, MSE: 3.125e-06
+2025-10-17 11:31:41,341 - INFO: Deployable parameters saved to: log/exp/qpwl_e16b8.json

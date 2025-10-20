@@ -1,7 +1,7 @@
-func_name: gelu
-criterion_name: 'mae'
-num_entries: 8
-x_range: [-4.0, 2.0]
+func_name: exp
+criterion_name: 'mse'
+num_entries: 16
+x_range: [-8.0, 0.0]
 train: True
 train_epochs: 40000
 train_lr: 1.0e-3

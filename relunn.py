@@ -6,16 +6,17 @@ from torch.optim.lr_scheduler import SequentialLR
 import json
 import matplotlib.pyplot as plt
 import numpy as np
-from utils import get_target_function, convert_tensor_to_list, setup_logging
+from utils import get_target_function, get_loss_criterion, convert_tensor_to_list, setup_logging
 
 
 class ReluNN(nn.Module):
-    def __init__(self, num_entries=8, x_range=(-5.0, 5.0), func_name='gelu'):
+    def __init__(self, num_entries=8, x_range=(-5.0, 5.0), func_name='gelu', criterion_name='mae'):
         super(ReluNN, self).__init__()
         self.num_entries = num_entries
         self.x_range = x_range
         self.func_name = func_name
         self.target_func = get_target_function(func_name)
+        self.criterion = get_loss_criterion(criterion_name)
         self.layer = nn.Sequential(
             nn.Linear(1, self.num_entries - 1, bias=True),
             nn.ReLU(),
@@ -35,7 +36,7 @@ class ReluNN(nn.Module):
     def init_weight(self):
         H = self.num_entries - 1
         x_min, x_max = self.x_range
-        knots = np.linspace(x_min, x_max, H + 2)[1:-1]  # 去掉端点
+        knots = np.linspace(x_min, x_max, H + 2)[1:-1]
         x_nodes = np.concatenate([[x_min], knots, [x_max]])
         y_nodes = self.target_func(torch.from_numpy(x_nodes)).numpy()
 
@@ -53,8 +54,8 @@ class ReluNN(nn.Module):
     def range_loss(self):
         breakpoints = -self.layer[0].bias / self.layer[0].weight.squeeze()
         width = self.x_range[1] - self.x_range[0]
-        lower_bound = self.x_range[0] + width * 0.01
-        upper_bound = self.x_range[1] - width * 0.01
+        lower_bound = self.x_range[0] + width * 0.005
+        upper_bound = self.x_range[1] - width * 0.005
         lower_bound_violation = torch.relu(lower_bound - breakpoints)
         upper_bound_violation = torch.relu(breakpoints - upper_bound)
         constraint_loss = torch.sum(lower_bound_violation + upper_bound_violation)
@@ -124,18 +125,18 @@ class ReluNN(nn.Module):
         x_eval = torch.linspace(self.x_range[0], self.x_range[1], 1000, device=device)
         y_true_eval = self.target_func(x_eval)
         y_pred_eval = self.pwl_forward(x_eval)
-        mae = nn.L1Loss()(y_pred_eval, y_true_eval).item()
-        return mae
+        mae = nn.functional.l1_loss(y_pred_eval, y_true_eval).item()
+        mse = nn.functional.mse_loss(y_pred_eval, y_true_eval).item()
+        return mae, mse
 
-    def train_model(self, total_epochs=20000, warmup_epochs=1000, base_lr=1e-3, weight_decay=1e-4,
-                    range_weight=0.1, prox_weight=0.0):
+    def train_model(self, total_epochs=20000, warmup_epochs=1000,
+                    base_lr=1e-3, weight_decay=1e-4, range_weight=0.1, prox_weight=0.0):
         save_name = f'log/{self.func_name}/{self.num_entries}entry'
         logger = setup_logging(f'{save_name}.log')
         device = next(self.parameters()).device
         x = torch.linspace(self.x_range[0], self.x_range[1], 1000).unsqueeze(1).to(device)
         y_true = self.target_func(x)
 
-        criterion = nn.L1Loss()
         optimizer = optim.AdamW(self.parameters(), lr=base_lr, weight_decay=weight_decay)
         warmup_scheduler = LinearLR(optimizer, start_factor=0.1, end_factor=1.0, total_iters=warmup_epochs)
         cosine_scheduler = CosineAnnealingLR(optimizer, T_max=total_epochs - warmup_epochs, eta_min=1e-5)
@@ -162,7 +163,7 @@ class ReluNN(nn.Module):
         self.train()
         for epoch in range(total_epochs):
             y_pred = self(x)
-            main_loss = criterion(y_pred, y_true)
+            main_loss = self.criterion(y_pred, y_true)
             range_loss = range_weight * self.range_loss()
             prox_loss = prox_weight * self.proximity_loss()
             total_loss = main_loss + range_loss + prox_loss
@@ -178,33 +179,35 @@ class ReluNN(nn.Module):
             if epoch % 500 == 0 or epoch == total_epochs - 1:
                 current_lr = optimizer.param_groups[0]['lr']
                 log_msg = (f'Epoch [{epoch}/{total_epochs}], '
-                           f'Total Loss: {total_loss.item():.6f}, '
-                           f'Main Loss: {main_loss.item():.6f}, '
-                           f'Range Loss: {range_loss.item():.6f}, '
-                           f'Prox Loss: {prox_loss.item():.6f}, '
-                           f'LR: {current_lr:.6f}')
+                           f'Total Loss: {total_loss.item():.3e}, '
+                           f'Main Loss: {main_loss.item():.3e}, '
+                           f'Range Loss: {range_loss.item():.3e}, '
+                           f'Prox Loss: {prox_loss.item():.3e}, '
+                           f'LR: {current_lr:.3e}')
                 logger.info(log_msg)
 
         self.load_state_dict(best_state_dict)
         self.convert2lut()
 
+        mae, mse = self.evaluate()
+
         torch.save(best_state_dict, f"{save_name}.pt")
         train_results = {
             "config": train_config,
-            "best_loss": best_loss,
-            "final_loss": total_loss.item(),
+            "mae": mae,
+            "mse": mse,
             "lookup_table": {
                 "breakpoints": convert_tensor_to_list(self.pwl_p),
                 "pwl_si": convert_tensor_to_list(self.pwl_k),
                 "pwl_ti": convert_tensor_to_list(self.pwl_b)
             }
         }
-        with open(f"{save_name}_results.json", 'w') as f:
+        with open(f"{save_name}.json", 'w') as f:
             json.dump(train_results, f, indent=2)
 
-        logger.info(f"Best MAE: {best_loss}")
+        logger.info(f"MAE: {mae:.10f}, MSE: {mse:.10f},")
         logger.info(f"Model saved to {save_name}.pt")
-        logger.info(f"Training results saved to {save_name}_results.json")
+        logger.info(f"Training results saved to {save_name}.json")
         self.visual()
 
         return best_loss
@@ -231,14 +234,14 @@ class ReluNN(nn.Module):
 
         fig, axes = plt.subplots(2, 2, figsize=(14, 10))
 
-        # 子图1: 函数对比
+        # Function Approximation
         axes[0, 0].plot(x_np, y_true_np, 'k-', label=f'True {self.func_name.upper()}', linewidth=2)
         axes[0, 0].plot(x_np, y_approx_np, 'r--', label='PWL Approximation', linewidth=1.5)
         axes[0, 0].set_title('Function Approximation')
         axes[0, 0].legend()
         axes[0, 0].grid(True, alpha=0.3)
 
-        # 子图2: 分段线性段
+        # Piecewise Linear Segments
         full_breakpoints = np.concatenate([[self.x_range[0]], breakpoints, [self.x_range[1]]])
         for i in range(self.num_entries):
             start, end = full_breakpoints[i], full_breakpoints[i + 1]
@@ -250,7 +253,7 @@ class ReluNN(nn.Module):
         axes[0, 1].legend(fontsize=8)
         axes[0, 1].grid(True, alpha=0.3)
 
-        # 子图3: 误差分析
+        # Approximation Error
         mae, max_ae = np.mean(error), np.max(error)
         axes[1, 0].plot(x_np, error, 'C3-', label='Absolute Error', linewidth=1.5)
         axes[1, 0].axhline(mae, color='C2', linestyle='--', label=f'MAE = {mae:.4e}')
@@ -259,7 +262,7 @@ class ReluNN(nn.Module):
         axes[1, 0].legend()
         axes[1, 0].grid(True, alpha=0.3)
 
-        # 子图4: 断点位置
+        # Breakpoint Locations
         bkp_ys = self.pwl_forward(self.pwl_p.unsqueeze(1)).squeeze().cpu().numpy()
         axes[1, 1].plot(x_np, y_true_np, 'k-', alpha=0.7, label='True Function')
         axes[1, 1].scatter(breakpoints, bkp_ys, color='red', s=40, zorder=5, label='Breakpoints')
@@ -274,19 +277,3 @@ class ReluNN(nn.Module):
         plt.savefig(save_path, dpi=300, bbox_inches='tight')
         # plt.show()
 
-
-if __name__ == "__main__":
-    torch.manual_seed(42)
-    torch.cuda.manual_seed(42)
-    model = ReluNN(num_entries=8, x_range=(-5, 5), func_name='gelu')
-    model.convert2lut()
-    model.visual()
-    best_loss = model.train_model(
-        total_epochs=40000,
-        warmup_epochs=1000,
-        base_lr=1e-3,
-        weight_decay=1e-4,
-        range_weight=0.1,
-        prox_weight=0.1
-    )
-    print(f"Training completed with best loss: {best_loss:.6f}")

@@ -11,13 +11,14 @@ def main(cfg_path):
     with open(cfg_path, 'r', encoding='utf-8') as f:
         config = yaml.safe_load(f)
 
-    # Step 1: 训练 ReluNN
+    # Step 1: Training ReluNN
     if config['train']:
         print("=== Step 1: Training ReluNN ===")
         model = ReluNN(
             num_entries=config['num_entries'],
             x_range=tuple(config['x_range']),
-            func_name=config['func_name']
+            func_name=config['func_name'],
+            criterion_name=config['criterion_name']
         )
         model.train_model(
             total_epochs=config['train_epochs'],
@@ -36,8 +37,9 @@ def main(cfg_path):
             num_entries=config['num_entries'],
             x_range=tuple(config['x_range']),
             func_name=config['func_name'],
+            criterion_name=config['criterion_name'],
             ckpt_path=ckpt_path,
-            bits=config['bits']
+            bits=config['bits'],
         )
 
         qpwl_model.qat(
@@ -47,4 +49,4 @@ def main(cfg_path):
 
 
 if __name__ == "__main__":
-    main("config/tanh.yaml")
+    main("config/gelu.yaml")
