@@ -4,7 +4,10 @@ Software implementation of "Neural Quantization-Aware Piecewise Linear Approxima
 
 ## Overview
 
+![overall](fig/overall.png)
+
 The project provides a two-stage training pipeline: pre-training + quantization-aware fine-tuning:
+
 - **ReluNN**: A neural network model for learning nonlinear functions
 - **QPWL**: Quantized Piecewise Linear model for efficient inference
 
@@ -90,3 +93,6 @@ Training generates:
 | Exp        |  [-8, 0]  |  [6.5e⁻⁶](./table2/log_e8/exp)   |  [3.1e⁻⁶](./table2/log_e16/exp)   |
 | Div        | [0.5, 4]  |  [2.5e⁻⁵](./table2/log_e8/div)   |  [1.2e⁻⁵](./table2/log_e16/div)   |
 | Rsqrt      | [0.25, 4] | [2.8e⁻⁵](./table2/log_e8/rsqrt)  | [6.3e⁻⁶](./table2/log_e16/rsqrt)  |
+
+### Example: GELU Approx Visualization
+![overall](fig/gelu_approx.png)
